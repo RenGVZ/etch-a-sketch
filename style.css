@@ -1,0 +1,9 @@
+.grid {
+  border: 2px black solid;
+}
+
+.grid-square {
+  border: 2px black solid;
+  height: 4px;
+  width:4px;
+}
