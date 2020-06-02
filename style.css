@@ -1,9 +1,55 @@
-.grid {
-  border: 2px black solid;
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: url('src/images/blue.jpg') no-repeat center center fixed;
 }
 
-.grid-square {
-  border: 2px black solid;
+h1 {
+  text-align: center;
+}
+
+#settings {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+  width: auto;
+}
+
+.btn {
+  width: 80px;
+  height: 40px;
+  margin: 2px;
+  background: rgb(61, 61, 164);
+  color: white;
+  border-radius: 2px;
+  border: none;
+  font-weight: 600;
+}
+
+#sketchpad-size {
+  display: flex;
+  justify-content: center;
+}
+
+#pad-size {
+  font-weight: 600;
+  font-size: 22px;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-right: 2px;
+}
+
+#grid {
+  height: 80vh; width: 720px;
+  border: 1px solid ;
+  margin: auto;
+  background: white;
+  display: grid;
+}
+
+#gridItem {
   height: 4px;
-  width:4px;
+  width: 4px;
+  border: 1px solid black;
 }

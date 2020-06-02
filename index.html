@@ -9,8 +9,20 @@
 <body>
   <h1>Etch-a-sketch</h1>
 
+  <div id='sketchpad-size'>
+    <label for="pad-size" id='pad-size'>Re-size</label>
+    <input type="number" min=1 max=200 for='pad-size'>
+    <button type="button" class="btn">Re-size</button>
+  </div>
+
+  <div id='settings'>
+    <button type='button' class='btn'>Clear</button>
+    <button type='button' class='btn'>Pressed</button>
+    <button type='button' class='btn'>On Hover</button>
+    <button type='button' class='btn' id='go'>Go</button>
+  </div>
+
   <div id='grid'></div>
-  <button id='btn'></button>
 
   <script src='script.js'></script>
 </body>
