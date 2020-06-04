@@ -40,11 +40,15 @@ function reSizeGrid() {
 
 
 }
-
+function generateRandomColor() {
+  var randomColor = '#'+Math.floor(Math.random()*16777215).toString(16);
+  return randomColor;
+}
 
 grid.addEventListener('mousemove', (event) => {
+  console.log(event)
   let target = event.target;
-  target.style.background = 'red';
+  target.style.background = generateRandomColor();
   grid.addEventListener('mouseleave', (event) => {
   event.preventDefault();
 });
