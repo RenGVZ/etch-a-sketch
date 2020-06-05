@@ -50,6 +50,7 @@ grid.addEventListener('mousemove', (event) => {
   let target = event.target;
   target.style.background = generateRandomColor();
   grid.addEventListener('mouseleave', (event) => {
+    console.log(event);
   event.preventDefault();
 });
 grid.addEventListener('mouseenter', (event) => {
